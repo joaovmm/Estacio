@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width-device-width">
+		<title>Bolaria</title>
+		<link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="JS/form.js" defer></script>
+	</head>
+
+<body>	
+    <header>
+        <div class="caixa">
+            <h1><img src="img/logo.png" alt="Logo bolaria"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="avaliacao.html">Avaliações</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+	<main>
+     <div class="bolo-prod"> 
+        <table>
+            <thead>
+                <tr>
+                    <th>bolo</th>
+                    <th>preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bolo de Cenoura</td>
+                    <td>R$ 24,99</td>
+                </tr>
+                <tr>
+                    <td>Bolo de Fubá</td>
+                    <td>R$ 19,99</td>   
+                </tr>
+                <tr>
+                    <td>Bolo de Chocolate</td>
+                    <td>R$ 29,99</td>
+                </tr>
+                <tr>
+                    <td>Bolo de Milho</td>
+                    <td>R$ 27,99</td>
+                </tr>
+                <tr>
+                    <td>Bolo de Laranja</td>
+                    <td>R$ 24,99</td>
+                </tr>
+
+            </tbody>
+        </table>   
+      <video class="video" src="img/bolos.mp4" controls autoplay ></video>  
+     </div>
+        <p>*frete padrão de R$ 2,00</p>
+        <p>*pedaços são vendidos somente nas lojas</p>
+
+
+        <form id="form">
+            <label for="nomesobrenome">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" >
+
+            <label for="email">Endereço</label>
+            <input type="text" id="endereco" class="input-padrao"  placeholder="CEP, Rua, Número, Bairro e Complemento">
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao"  placeholder="(XX) XXXXX-XXXX">
+
+            <div id="item" class="item">
+                <label>Selecione o sabor:</label>
+                    <select id="produtoId" name="produtoId">
+                        <option value="1"></option>
+                        <option value="2">Bolo de Cenoura</option>
+                        <option value="5">Bolo de Fubá</option>
+                        <option value="9">Bolo de Chocolate</option>
+                        <option value="10">Bolo de Milho</option>
+                        <option value="11">Bolo de Laranja</option>
+                    </select>
+                <label>Quantidade: </label>
+                <input type="number" id="quant" name="quant"/>
+            </div>
+            <input type="hidden" id="itemCont" value="1"/>
+
+            <label for="observacao">Observações</label>
+            <textarea cols="70" rows="10" id="observacao" class="input-padrao" ></textarea>
+
+
+  
+            <fieldset>
+                <legend>qual a forma de pagamento?</legend>
+                <label for="radio-Crédito"><input type="radio" name="contato" value="Crédito" id="radio-Crédito"> Crédito</label>
+                
+                <label for="radio-debito"><input type="radio" name="contato" value="debito" id="radio-debito"> Débito</label>
+                
+                <label for="radio-PIX"><input type="radio" name="contato" value="PIX" id="radio-PIX" checked> PIX</label>
+            </fieldset>
+
+            
+            <input type="submit" value="Enviar formulário" class="enviar">
+        </form>
+
+
+
+
+
+
+
+
+
+	</main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="img/logo2.png" alt="Logo da Empresa">
+            </div>
+            <div class="footer-social">
+                <ul class="lista-rodapé">
+                    <li class="lista-rodapé__item">
+                        <a href="#" class="lista-rodapé__link">
+                            <img src="img/insta.png" alt="Logo do instagram">
+                        </a>
+                    </li>
+                    <li class="lista-rodapé__item">
+                        <a href="#" class="lista-rodapé__link">
+                            <img src="img/twitter.png" alt="Logo do twitter">
+                        </a>
+                    </li>
+                    <li class="lista-rodapé__item">
+                        <a href="#" class="lista-rodapé__link">
+                            <img src="img/face.png" alt="Logo do facebook">
+                        </a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            &copy; Bolaria. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+
+</html>
